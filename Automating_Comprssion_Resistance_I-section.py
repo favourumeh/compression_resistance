@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 25 11:58:49 2021
 
-This script determines the most efficient(minimum section area) I-section size required for a given load Ned
+This script determines the most efficient(minimum ) I-section size required for a given load Ned
 
 @author: favou
 """
