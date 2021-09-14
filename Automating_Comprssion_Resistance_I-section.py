@@ -12,7 +12,7 @@ from My_Functions import any_True
 from My_Functions import searching_df_columns
 from My_Functions import member_data_locator
 from My_Functions import underline
-#Variables required
+
 
 class Auto_I_section:
     grades = ['S235', 'S275', 'S355', 'S450']
@@ -21,14 +21,14 @@ class Auto_I_section:
         
         self.Ned = Ned #kN Design load
                    
-        self.grade = grade
-        self.L =L
-        self.E = E
+        self.grade = grade #grade of steel
+        self.L =L #span of member(beam/column)
+        self.E = E #young's modulus of member
         
-        self.b_cw = b_cw
-        self.b_cf = b_cf
+        self.b_cw = b_cw #is the web in bending or compression (b_cw = "b" is bending, b_cf = "c" is compression)
+        self.b_cf = b_cf #is the flange in bending or compression (b_cw = "b" is bending, b_cf = "c" is compression)
         
-        self.beam_column = beam_column
+        self.beam_column = beam_column # is the member a beam or a column (beam_column = "beam" means member is a beam...). 
         
         if any_True(self.grade, Auto_I_section.grades) == False :
             " if the grade inputted is not part of database "
