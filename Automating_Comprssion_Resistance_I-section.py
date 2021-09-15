@@ -62,7 +62,7 @@ class Auto_I_section:
         
         call = Auto_I_section.grade_to_fy(self)
         k = 0.4
-        self.Area = 10*self.Ned/(k*self.fy) # cm2
+        self.Area = 10*self.Ned/(k*self.fy) # Sizing column (Generating an area estimate (cm2))
         
         return self.Area
 
@@ -73,8 +73,8 @@ class Auto_I_section:
             property for a beam/column for that serial number """
             
 
-        UKC_dir = 'C:/Users/favou/Desktop/Summer Python/Merged UKC.xlsx'
-        UKB_dir = 'C:/Users/favou/Desktop/Summer Python/Merged UKB.xlsx'
+        UKC_dir = 'Merged UKC.xlsx'
+        UKB_dir = 'Merged UKB.xlsx'
         column_heading = 'Area of section cm2'
         serial_heading = 'Designation Serial size'
         from pandas import read_excel 
@@ -111,8 +111,8 @@ class Auto_I_section:
               resistance) and buckling(member buckling resistance)"""
             
 
-        UKC_dir = 'C:/Users/favou/Desktop/Summer Python/Merged UKC.xlsx'
-        UKB_dir = 'C:/Users/favou/Desktop/Summer Python/Merged UKB.xlsx'
+        UKC_dir = 'Merged UKC.xlsx'
+        UKB_dir = 'Merged UKB.xlsx'
         column_heading = 'Area of section cm2'
         serial_heading = 'Designation Serial size'
         from pandas import read_excel 
@@ -260,13 +260,13 @@ class Auto_I_section:
     
 
     
-#Testing
+###########################  Testing  ########################################
 # A = Auto_I_section(Ned =305.6, L=4.5, grade = 'S275')  
 
 
 # B = A.iteration()
 
-A = Auto_I_section(Ned =1100, L=8, grade = 'S275')  
+A = Auto_I_section(Ned =1100, L=4, grade = 'S275')  
 
 
 B = A.iteration()
