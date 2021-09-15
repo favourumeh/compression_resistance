@@ -19,11 +19,11 @@ class Auto_I_section:
    
     def __init__(self, Ned, L, grade, E = 210000, beam_column = 'column', b_cw = 'c', b_cf ='c'):
         
-        self.Ned = Ned #kN Design load
+        self.Ned = Ned #Design load in KN
                    
-        self.grade = grade #grade of steel
-        self.L =L #span of member(beam/column)
-        self.E = E #young's modulus of member
+        self.grade = grade #grade of steel ( any one in the list in line 18)
+        self.L =L #span of member(beam/column) in m
+        self.E = E #young's modulus of member in N/mm2 or MPa
         
         self.b_cw = b_cw #is the web in bending or compression (b_cw = "b" is bending, b_cf = "c" is compression)
         self.b_cf = b_cf #is the flange in bending or compression (b_cw = "b" is bending, b_cf = "c" is compression)
