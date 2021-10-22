@@ -14,6 +14,9 @@
 
 - This tool is can be used by those with/without experience in Structural Engineering to perfrom quick design checks on the compression resistance of structural members
 
+# Reference
+I-Beam image: https://www.alcoengineering.co.uk/steel-universal-i-beams.html
+
 # How to use the tool
 - Open the file: 'compression_resistance.py'  
 - Alter the variables as explained in the script
