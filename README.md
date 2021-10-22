@@ -1,4 +1,4 @@
-# Compression Resistance
+# Automating the Design of Compression Members
 
 ![](https://github.com/favourumeh/compression_resistance/blob/main/Universal%20I-Beam%20and%20compressive%20load%20image.png)
 
