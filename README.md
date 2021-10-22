@@ -1,4 +1,6 @@
-# compression_resistance
+# Compression Resistance
+
+![](https://github.com/favourumeh/compression_resistance/blob/main/Universal%20I-Beam%20and%20compressive%20load%20image.png)
 
 ## Project Overview
 - Created a tool that provides desk-based assessment of the adequecy of universal columns and beams (UKC and UKB) subjected to compressive loads. 
