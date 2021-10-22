@@ -1,19 +1,34 @@
 # compression_resistance
 
-The script "Automating_Comprssion_Resistance_I-section.py" uses the: 
-      
-      1) design load, 
-      
-      2) span, 
-      
-      3) young's modulus, and
-      
-      4) nature of the loading of the web and flange(beneding or compression) 
-      
-And determines the most efficient (smallest section size) memeber in the TATA STEEL SECTION Table database that can safely withstand the specified compressive load according to Eurocode 3 design protocols. 
+## Project Overview
+- Created a tool that provides desk-based assessment of the adequecy of universal columns and beams (UKC and UKB) subjected to compressive loads. 
+- It uses the following information on the beam and loading conditions:  
+   - design compressive load applied on the member (in kN)
+   - span of the member(in m)
+   - young's modulus (in N/mm2 or MN/m2)
+   - steel grade
+   - member end connections (i.e. whether the member is pinned at both ends, fixed at both ends, pinned at one end (fixed at other end), etc)
+   - nature of the loading on the web and flange(beneding or compression) 
 
-To input your own paramemters in the script go to line 263 and specify the design load, span .... and run the script it 
+- This tool is can be used by those with/without experience in Structural Engineering to perfrom quick design checks on the compression resistance of structural members
 
-In the terminal you should see the detailed breakdown of the design procedure.
+# How to use the tool
+- Open the file: 'compression_resistance.py'  
+- Alter the variables as explained in the script
+- Run the script 
+- In the terminal there should be a detailed breakdown of: 
+      1) The structural member(s) analysed; 
+      2) The reasons for failure or success of the memeber(s); 
+      3) The calculations behind design procedure for the successful member
 
-For more info on the parameters see the __init__ method in lines 20-36. 
+- the below gif is a demo of the tool:
+
+![](https://github.com/favourumeh/compression_resistance/blob/main/GIF_demo.gif)
+
+
+**Note: This tool uses tabular data from the TATA steel structural memeber pdf database. It was scraped using the [scraper](https://github.com/favourumeh/PDF-SCRAPE-TATA-STEEL-SECTION-TABLES) developed in an earlier project. The tabular data used for this project are the csv files 'Merged UKC' and 'Merged UKB'. The recommended structural member is the most efficient memeber (i.e. smallest cross-section size) from the aforementioned csv files that can safely withstand the specified compressive load according to standard design for steel members protocols(Eurocode 3).**
+
+
+
+
+
