@@ -10,14 +10,14 @@ from Automating_Comprssion_Resistance_I_section import Auto_I_section
 
 #################### Change these variables accordingly ######################
 
-Ned = 1300 # design load in kN
-L = 4 # span of the structural memeber in metres(m)
+Ned = 3500 # design load in kN
+L =8 # span of the structural memeber in metres(m)
 
 # specify if the structural memeber is a universal beam or column
 beam_column = 'column'  # options: 'beam' or 'column' 
 
-grade = 'S235' #steel grade. options: 'S235', 'S275', 'S355', 'S450'
-E = 210000 # young's modulus of the steel
+grade = 'S355' #steel grade. options: 'S235', 'S275', 'S355', 'S450'
+E = 200000 # young's modulus of the steel in N/mm2
 end_connections = 'Pinned-Pinned'  # options: 'Pinned-Pinned', 'Fixed-Fixed', 'Pinned-Fixed', 'Fixed-Free' 
 
 
