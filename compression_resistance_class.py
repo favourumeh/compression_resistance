@@ -421,11 +421,13 @@ class CR:
 
 
 
-"""Testing """
+#"""Testing """
                             
                             
-CR1 = CR(Ned = 1100, grade='S275', serial_number = '356x406x634', L=1, end_connections = 'Fixed-Free')    
+# CR1 = CR(Ned = 1100, grade='S275', serial_number = '356x406x634', L=1, end_connections = 'Fixed-Free')    
+# check = CR1.Check()
 
+#ignore
 # ncr = CR1.Ncr()
 # ncr1 = CR1.Ncr1()
 # print(ncr)
@@ -441,4 +443,3 @@ CR1 = CR(Ned = 1100, grade='S275', serial_number = '356x406x634', L=1, end_conne
 # kai = CR.KAI()
 # print(kai)
 
-check = CR1.Check()

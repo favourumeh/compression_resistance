@@ -6,8 +6,8 @@ This script determines the most efficient(minimum section area) I-section size r
 
 @author: favou
 """
-from Class_and_Compression_tool import CR 
-from Class_and_Compression_tool import Member_Class
+from New_Member_Class import Member_Class
+from compression_resistance_class import CR
 from My_Functions import any_True
 from My_Functions import searching_df_columns
 from My_Functions import member_data_locator
@@ -233,7 +233,7 @@ class Auto_I_section:
         end_connections = self.end_connections # 'Pinned-Pinned', 'Fixed-Fixed', 'Pinned-Fixed', 'Fixed-Free' 
         section_type = 'rolled I' # 'rolled I' (I-section), 'welded I' (I-section), 'hollow'
         
-        self.C = CR(Ned=Ned, grade =grade, L = L, E = E, end_connections = self.end_connections, section_type = section_type, serial_number=serial_number)     
+        self.C = CR(Ned=Ned, grade =grade, L = L, E = E, end_connections = end_connections, section_type = section_type, serial_number=serial_number)     
         
         a0 = self.C.CS_res()
         a1 = self.C.buck_res_y()

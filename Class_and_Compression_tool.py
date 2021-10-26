@@ -9,7 +9,7 @@ Created on Sat Jul 24 18:38:11 2021
 
 from New_Member_Class import Member_Class
 
-from compression_resistance import CR
+from compression_resistance_class import CR
 
 
 """ 1) Required Properties """
